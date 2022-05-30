@@ -1,0 +1,20 @@
+{
+  "name": "react-boilerplate",
+  "version": "1.0.0",
+  "description": "A react boilerplate based on esbuild",
+  "main": "src/index.jsx",
+  "type": "module",
+  "devDependencies": {
+    "esbuild": "^0.14.40",
+    "esbuild-serve": "^1.0.1",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0"
+  },
+  "scripts": {
+    "start": "npm run build -- -w",
+    "build": "cp src/index.html dist/index.html; node config/esbuild.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Alejandro Perezpayá <alejandro@perezpaya.net>",
+  "license": "MIT"
+}
